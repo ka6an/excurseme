@@ -1,0 +1,111 @@
+.header-menu {
+  position: relative;
+  display: none;
+}
+
+.header-menu__btn {
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0 32px 0 0;
+  width: 23px;
+  height: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu__btn:hover,
+.header-menu__btn:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.header-menu__btn-span {
+  width: 23px;
+  height: 3px;
+  background: var(--black);
+  transition: background .4s ease, opacity .4s ease;
+}
+
+.header-menu__btn:hover .header-menu__btn-span {
+  background: var(--red100);
+}
+
+.header-menu__btn .header-menu__btn-span:nth-child(1),
+.header-menu__btn .header-menu__btn-span:nth-child(3) {
+  transform-origin: 0 50%;
+  transition: background .4s ease, transform .4s ease;
+}
+
+.header-menu__overlay,
+.header-menu-list {
+  position: absolute;
+  left: -24px;
+  top: calc(100% + 24px);
+  height: 100vh;
+}
+
+.header-menu__overlay,
+.header-menu-list {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease, visibility .4s ease;
+}
+
+.header-menu__overlay {
+  width: 100vw;
+  background: rgba(26, 30, 37, .3);
+  cursor: pointer;
+}
+
+.header-menu-list {
+  position: absolute;
+  left: -24px;
+  top: calc(100% + 24px);
+  background-color: var(--gray100);
+  width: 220px;
+  height: 100vh;
+  padding: 15px 0 0 0;
+}
+
+.header-menu__link {
+  font-size: 16px;
+  color: var(--black);
+  padding: 15px 24px;
+  display: inline-block;
+  width: 100%;
+  transition: color .4s ease;
+}
+
+.header-menu__link:hover,
+.header-menu__link:focus {
+  outline: none;
+  color: var(--red100);
+}
+
+[class~='header-menu--open'] .header-menu__btn-span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+[class~='header-menu--open'] .header-menu__btn-span:nth-child(2) {
+  opacity: 0;
+}
+
+[class~='header-menu--open'] .header-menu__btn-span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+[class~='header-menu--open'] .header-menu-list,
+[class~='header-menu--open'] .header-menu__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "platform": "web",
+  "version": "1.0.0",
+  "locale": "ru",
+  "languages": [
+      {
+          "id": 2,
+          "label": "English"
+      },
+      {
+          "id": 1,
+          "label": "Русский"
+      }
+  ],
+  "tour_types": [
+      {
+          "id": 1,
+          "label": "Пешеходная"
+      },
+      {
+          "id": 2,
+          "label": "Автобусная"
+      },
+      {
+          "id": 3,
+          "label": "Водная"
+      },
+      {
+          "id": 4,
+          "label": "Велосипедная"
+      },
+      {
+          "id": 5,
+          "label": "Самокат, сегвей"
+      },
+      {
+          "id": 6,
+          "label": "Мото"
+      },
+      {
+          "id": 7,
+          "label": "Аэро"
+      },
+      {
+          "id": 8,
+          "label": "Паркур"
+      }
+  ],
+  "age_limits": [
+      {
+          "id": 1,
+          "label": "Нет"
+      },
+      {
+          "id": 2,
+          "label": "6+"
+      },
+      {
+          "id": 3,
+          "label": "12+"
+      },
+      {
+          "id": 4,
+          "label": "18+"
+      }
+  ],
+  "tags": [
+      {
+          "id": 2,
+          "label": "Couple"
+      },
+      {
+          "id": 3,
+          "label": "New"
+      },
+      {
+          "id": 4,
+          "label": "Sport"
+      },
+      {
+          "id": 5,
+          "label": "Night"
+      }
+  ],
+  "slots_interval": 15
+}

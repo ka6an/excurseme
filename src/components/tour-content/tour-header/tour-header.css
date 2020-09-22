@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 25px;
+}
+
+.header-back {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__link {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--gray500);
+  border-bottom: 1px solid var(--gray900);
+}
+
+.header-back__icon {
+  width: 8px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.header__number {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--gray500);
+  margin: 0 12px 0 0;
+  padding: 0 12px 0 0;
+  line-height: 20px;
+  border-right: 1px solid var(--gray900);
+}
+
+.header__status {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+}
+
+.header__status--active {
+  color: var(--green);
+}

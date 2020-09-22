@@ -1,0 +1,19 @@
+.profile-guide-info-item:not(:last-child) {
+  margin: 0 0 15px;
+}
+
+.profile-guide-info__text {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--gray600);
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+.profile-guide-info__amount {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--green);
+}

@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray200);
+}
+
+.nav-tabs {
+  margin: 0 0 -27px;
+  border-bottom: none;
+}
+
+[class*="tab__link"] {
+	padding: 0px 17px;
+}
+
+[class*="tab-item"] {
+	width: initial;
+	min-width: 138px;
+    margin-right: 8px;
+}
+
+[class*="tab-item"]:last-child {
+	margin-right: 0;
+}

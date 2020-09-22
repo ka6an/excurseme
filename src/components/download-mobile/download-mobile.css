@@ -1,0 +1,26 @@
+.profile-download {
+  padding: 0 85px;
+  margin: 60px 0 0;
+}
+
+.profile-download_text {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.16px;
+  color: var(--black);
+}
+
+.profile-download-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px;
+}
+
+.profile-download__link {
+  margin: 0 6px;
+  width: 148px;
+  height: 51px;
+  display: block;
+}

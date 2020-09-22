@@ -1,0 +1,13 @@
+.photo-stage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+.photo-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 270px 270px;
+  grid-gap: 30px 40px;
+}

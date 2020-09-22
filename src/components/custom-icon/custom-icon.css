@@ -1,0 +1,96 @@
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-star {
+  background-image: url(/assets/images/star.svg);
+}
+
+.icon-star-gray {
+  background-image: url(/assets/images/star-gray.svg);
+}
+
+.icon-fb {
+  background-image: url(/assets/images/icon-fb.svg);
+}
+
+.icon-vk {
+  background-image: url(/assets/images/icon-vk.svg);
+}
+
+.icon-tw {
+  background-image: url(/assets/images/icon-tw.svg);
+}
+
+.icon-clock {
+  background-image: url(/assets/images/clock.svg);
+}
+
+.icon-person {
+  background-image: url(/assets/images/person.svg);
+}
+
+.icon-message-fill {
+  background-image: url(/assets/images/message-fill.svg);
+}
+
+.icon-message {
+  background-image: url(/assets/images/icon-message.svg);
+}
+
+.icon-ticket {
+  background-image: url(/assets/images/ticket.svg);
+}
+
+.icon-empty-tours {
+  background-image: url(/assets/images/empty-tours.svg);
+}
+
+.icon-empty-reviews {
+  background-image: url(/assets/images/empty-reviews.svg);
+}
+
+.icon-plus-circle-orange {
+  background-image: url(/assets/images/icon-plus-circle-orange.svg);
+}
+
+.icon-plus-circle-red {
+  background-image: url(/assets/images/icon-plus-circle-red.svg);
+}
+
+.icon-arrow {
+  background-image: url(/assets/images/arrow.svg);
+}
+
+.icon-arrow-gray {
+  background-image: url(/assets/images/arrow-gray.svg);
+}
+
+.icon-arrow-white {
+  background-image: url(/assets/images/arrow-white.svg);
+}
+
+.icon-lang {
+  background-image: url(/assets/images/lang.svg);
+}
+
+.icon-lang {
+  background-image: url(/assets/images/lang.svg);
+}
+
+.icon-balance {
+  background-image: url(/assets/images/icon-balance.svg);
+}
+
+.icon-logout {
+  background-image: url(/assets/images/icon-logout.svg);
+}
+
+.icon-close-gray {
+  background-image: url(/assets/images/icon-close-gray.svg);
+}

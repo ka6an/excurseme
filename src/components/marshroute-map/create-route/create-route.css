@@ -1,0 +1,40 @@
+.create-route-wrap {
+  border-bottom: 1px solid var(--gray200);
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.map {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-top: -40px;
+  height: 260px;
+}
+
+.search-box-list {
+  margin: 24px 0 18px;
+  counter-reset: letter;
+}
+
+.search-box__btn-add {
+  -webkit-appearance: none;
+  border: none;
+  color: var(--red100);
+  font-size: 14px;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  align-items: center;
+  transition: color .4s ease;
+}
+
+.search-box__btn-add:hover,
+.search-box__btn-add:focus {
+  outline: none;
+  cursor: pointer;
+  color: var(--red200);
+}
+
+.search-box__btn-icon {
+  margin-right: 8px;
+}

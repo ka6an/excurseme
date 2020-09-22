@@ -1,0 +1,31 @@
+.profile-guide-overview {
+  margin: 0 25px 0 30px;
+  padding: 5px 15px 0 0;
+  border-right: 1px solid var(--gray200);
+  flex-grow: 1;
+  height: 100%;
+}
+
+.profile-guide-overview__top {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray600);
+  line-height: 1;
+  letter-spacing: -0.13px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  height: 12px;
+}
+
+.profile-guide-overview__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.43px;
+  color: var(--black);
+  margin: 0 0 12px;
+  max-width: 265px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

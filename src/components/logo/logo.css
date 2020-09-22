@@ -1,0 +1,10 @@
+.header-logo {
+  display: block;
+}
+
+.header-logo__img {
+  width: 157px;
+  min-width: 157px;
+  height: 68px;
+  object-fit: contain;
+}

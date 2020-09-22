@@ -1,0 +1,53 @@
+.button {
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 21px;
+  background: transparent;
+  min-width: 202px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  display: block;
+  margin: 0;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: var(--red100);
+  color: white;
+  transition: background-color 0.4s ease;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  outline: none;
+  cursor: pointer;
+  background-color: var(--red200);
+}
+
+.button--second {
+  border-color: var(--red100);
+  color: var(--red100);
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.button--second:hover,
+.button--second:focus {
+  border-color: var(--red200);
+  color: var(--red200);
+}
+
+.button--inactive {
+  background-color: var(--gray400);
+  color: white;
+}
+
+.button--inactive:hover,
+.button--inactive:focus {
+  cursor: not-allowed;
+}

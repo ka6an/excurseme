@@ -1,0 +1,11 @@
+.slider-item {
+  border-radius: 4px;
+  width: 111px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0 3.375px 0;
+}
+
+.slider-item:hover {
+  cursor: pointer;
+}

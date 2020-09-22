@@ -1,0 +1,13 @@
+.content {
+  margin: 94px auto 100px;
+}
+.content--large {
+  width: 1200px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px 36px;
+  margin-top: 34px;
+}

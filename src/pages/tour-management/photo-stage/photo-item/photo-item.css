@@ -1,0 +1,62 @@
+.photo-item {
+  width: 270px;
+  height: 170px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-radio {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+}
+
+.photo-radio__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.photo-radio__label {
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 28px;
+  display: inline-block;
+}
+
+.photo-radio__label:before,
+.photo-radio__label:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.photo-radio__label:before {
+  border-radius: 50%;
+  border: 1px solid var(--gray900);
+  display: block;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.photo-radio__label:after {
+  background: url(../../../../../assets/images/icon-check-white.svg) no-repeat center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.photo-radio__input:checked+.photo-radio__label:before {
+  border-color: var(--red100);
+  background: var(--red100);
+}
+
+.photo-radio__input:checked+.photo-radio__label:after {
+  opacity: 1;
+  visibility: visible;
+}

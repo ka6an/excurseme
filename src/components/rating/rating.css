@@ -1,0 +1,42 @@
+.rating {
+  min-width: 39px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 5px 0px 3px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(148, 163, 179, 0.16);
+}
+
+.rating--transparent {
+  background: transparent;
+}
+
+.rating--big {
+  font-size: 16px;
+  height: 24px;
+  border-radius: 12px;
+  padding-left: 9px;
+}
+
+.rating--big .rating__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.rating__icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px 3px 0;
+}
+
+.rating__label {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--gray600);
+  font-weight: 400;
+  margin: 0 3px 0 0;
+}

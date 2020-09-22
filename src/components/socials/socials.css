@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+  width: 21px;
+  height: 21px;
+  border: solid 1px var(--gray200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 7px 0 0;
+}
+
+.socials__item:last-child {
+  margin: 0;
+}
+
+.socials__icon {
+  width: 11px;
+  height: 11px;
+}

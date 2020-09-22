@@ -1,0 +1,40 @@
+.map-wrap {
+  height: 250px;
+  width: calc(100% + 56px);
+  margin-left: -28px;
+}
+
+.route-list {
+  margin: 20px 0;
+}
+
+.route-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+
+.routeitem:last-child {
+  margin-bottom: 0;
+}
+
+.route-item__marker {
+  width: 20px;
+  height: 20px;
+  line-height: 21px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+  color: white;
+  text-transform: uppercase;
+  background: var(--black);
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 11px 0 0;
+}
+
+.route-item__text {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--black);
+}

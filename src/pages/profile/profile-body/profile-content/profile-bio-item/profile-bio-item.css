@@ -1,0 +1,20 @@
+.group {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--black);
+  margin: 0 0 30px;
+}
+
+.group--divider {
+  border-bottom: 1px solid var(--gray200);
+  padding-bottom: 30px;
+}
+
+.group__label {
+  color: var(--gray600);
+  margin: 0 0 12px;
+}
+
+.group__text {
+  line-height: 1.29;
+}

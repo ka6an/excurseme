@@ -1,0 +1,130 @@
+.card {
+  width: 278px;
+  height: 372px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgba(226, 231, 233, 0.85);
+  overflow: hidden;
+}
+
+.card-header {
+  position: relative;
+  width: 100%;
+  height: 174px;
+  background: var(--gray400);
+}
+
+.card__img {
+  object-fit: cover;
+}
+
+.card-rating {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  background-color: rgba(26, 30, 37, 0.5);
+  color: white;
+}
+
+.card-body {
+  padding: 20px 0 14px;
+  border-bottom: 1px solid var(--gray200);
+  margin: 0 20px 14px;
+}
+
+.card__title {
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--green);
+}
+
+.card__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.23px;
+  color: var(--black);
+  margin: 10px 0 8px;
+  display: block;
+  height: 44px;
+  overflow: hidden;
+}
+
+.card-info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-info-item {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 0 0;
+}
+
+.card-info-item:last-child {
+  margin-right: 0;
+}
+
+.card-info__icon {
+  margin: 0 6px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.card-info__text {
+  font-size: 14px;
+  letter-spacing: -0.13px;
+  color: var(--gray500);
+  height: 10px;
+}
+
+.card-info__text--upper {
+  text-transform: uppercase;
+  font-size: 11px;
+  height: 9px;
+}
+
+.card-messages {
+  width: 57px;
+  height: 30px;
+  border-radius: 20px;
+  border: solid 1px var(--gray200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: -0.09px;
+  color: var(--red100);
+  transition: color 0.4s ease;
+}
+
+.card-messages:hover,
+.card-messages:focus {
+  color: var(--red200);
+}
+
+.card-messages__icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px 0 0;
+}
+
+.card-item__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: -0.23px;
+  color: var(--black);
+}
+
+.card-item__price-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 12px 0 0;
+}

@@ -1,0 +1,111 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.group {
+  margin-top: 35px;
+  width: 100%;
+  position: relative;
+}
+
+.group:first-child {
+  margin-top: 0;
+}
+
+.group--half {
+  width: 260px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--black);
+  margin: 0 0 8px;
+  display: block;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 1.38;
+  letter-spacing: -0.19px;
+  color: var(--gray500);
+  margin: 0 0 12px;
+}
+
+.group--required .label:after {
+  content: "*";
+  color: var(--red100);
+  font-size: 18px;
+  line-height: 13px;
+  height: 13px;
+}
+
+.input,
+.textarea {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  box-shadow: 0 -1px 0 0 rgba(26, 30, 37, 0.15);
+  border: solid 1px var(--gray200);
+  background: white;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.09px;
+  color: var(--black);
+  transition: box-shadow 0.4s ease, border 0.4s ease;
+}
+
+.input {
+  height: 36px;
+}
+
+.input--invalid {
+  border-bottom-color: var(--orange);
+  background: url(/assets/images/icon-invalid-orange.svg) no-repeat calc(100% - 8px) 6px;
+}
+
+.select--invalid[class*='select-container'] [class~='select__control'] {
+  border-bottom-color: var(--orange);
+}
+
+.invalid-feedback {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: var(--gray500);
+  margin-top: 4px;
+}
+
+.input:hover,
+.input:focus,
+.textarea:hover,
+.textarea:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 0 rgba(26, 30, 37, 0.15);
+  border: solid 1px var(--gray900);
+}
+
+.textarea {
+  min-height: 78px;
+  max-height: 234px;
+  resize: vertical;
+  padding: 12px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 35px 0 0;
+}
+
+.buttons [class*='button']:first-child {
+  margin-right: 24px;
+}
+
+.buttons [class*='button']:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,108 @@
+.search-box-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  position: relative;
+}
+
+.search-box-item:before {
+  content: counter(letter, upper-alpha);
+  counter-increment: letter;
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  line-height: 21px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+  color: white;
+  text-transform: uppercase;
+  background: var(--black);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.search-box__input {
+  width: 522px;
+  padding-left: 40px;
+}
+
+.search-box__btn-remove {
+  -webkit-appearance: none;
+  border: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.search-box__btn-remove:hover,
+.search-box__btn-remove:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+[class~='pac-container'] {
+  background: var(--gray100);
+  border: solid 1px var(--gray200);
+  box-shadow: none;
+  border-radius: 0;
+  max-height: 170px;
+  overflow-y: scroll;
+}
+
+[class~='pac-container']::-webkit-scrollbar {
+  width: 4px;
+}
+
+[class~='pac-container']::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+}
+
+[class~='pac-container']::-webkit-scrollbar-thumb {
+  background-color: var(--gray200);
+  border-radius: 2.5px;
+}
+
+[class~='pac-item'] {
+  padding: 6px 15px;
+  font-family: 'GothamPro', sans-serif;
+  font-size: 13px;
+  line-height: 1.54;
+  color: var(--gray500);
+  display: block;
+  border: none;
+}
+
+[class~='pac-item']:first-child {
+  padding-top: 12px;
+}
+
+[class~='pac-item-selected'],
+[class~='pac-item']:hover {
+  cursor: pointer;
+  background: transparent;
+}
+
+[class~='pac-icon-marker'],
+[class~='pac-icon'] {
+  display: none;
+}
+
+[class~='pac-matched'] {
+  font-weight: 500;
+}
+
+[class~='pac-item-query'] {
+  font-size: 14px;
+  color: var(--black);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color .4s ease;
+}
+
+[class~='pac-item-selected'] [class~='pac-item-query'],
+[class~='pac-item']:hover [class~='pac-item-query'] {
+  color: var(--red100);
+}

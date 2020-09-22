@@ -1,0 +1,26 @@
+.nav__link {
+  color: var(--black);
+  line-height: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 118px;
+  padding: 0 15px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color .4s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  cursor: pointer;
+}
+
+.nav__link--active {
+  border-bottom-color: var(--red100);
+}
+
+.nav-item .icon {
+  width: 27px;
+  height: 27px;
+}

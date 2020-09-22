@@ -1,0 +1,128 @@
+/*========== variables ==========*/
+:root {
+  --black: #1a1e25;
+  --gray100: #f4f6f8;
+  --gray200: #e2e7e9;
+  --gray400: #a3a5a8;
+  --gray500: #6c7a88;
+  --gray600: #94a3b3;
+  --gray900: #c8cbce;
+  --red100: #ee2e42;
+  --red200: #cd3141;
+  --yellow: #ffb600;
+  --orange: #f5a623;
+  --green: #1dbca9;
+}
+
+/*========== custom fonts ==========*/
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/GothamProRegular.woff2') format('woff2'),
+    url('/assets/fonts/GothamProRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/GothamProLight.woff2') format('woff2'),
+    url('/assets/fonts/GothamProLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/GothamProMedium.woff2') format('woff2'),
+    url('/assets/fonts/GothamProMedium.woff') format('woff');
+}
+
+/*========== reset styles ==========*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: unset;
+  font-size: unset;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'GothamPro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: normal;
+  background-color: var(--gray100);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

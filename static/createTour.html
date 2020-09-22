@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>page guide</title>
+  <link rel="stylesheet" type="text/css" href="./styles/pageGuide.css">
+</head>
+
+<body>
+  <header class="header-main">
+  </header>
+  <div class="wrap createTour">
+    <h1>Редактировать экскурсию</h1>
+    <ul class="tabs tabs-4">
+      <li class="tab-item">
+        <a href="createTour.html" class="tab__link tab__link--active">Описание</a>
+      </li>
+      <li class="tab-item">
+        <a href="#0" class="tab__link">Детали</a>
+      </li>
+      <li class="tab-item">
+        <a href="#0" class="tab__link">Фото</a>
+      </li>
+      <li class="tab-item">
+        <a href="#0" class="tab__link">Маршрут</a>
+      </li>
+    </ul>
+    <form class="form">
+      <div class="form-group">
+        <p class="form__label">Название экскурсии</p>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form-group">
+        <p class="form__label">Описание</p>
+        <textarea class="form__textarea"></textarea>
+      </div>
+      <div class="form-group form-group--half">
+        <p class="form__label">Язык</p>
+        <div class="form-select">
+          <button class="form-select__title">Не выбрано</button>
+          <ul class="form-select-list">
+            <li class="form-select__option">Русский</li>
+            <li class="form-select__option">Английский</li>
+            <li class="form-select__option">Русский</li>
+            <li class="form-select__option">Английский</li>
+            <li class="form-select__option">Русский</li>
+            <li class="form-select__option">Английский</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group form-group--half">
+        <p class="form__label">Длительность</p>
+        <div class="form-select form-select--small">
+          <button class="form-select__title">00</button>
+          <ul class="form-select-list">
+            <li class="form-select__option">01</li>
+            <li class="form-select__option">02</li>
+            <li class="form-select__option">03</li>
+            <li class="form-select__option">04</li>
+            <li class="form-select__option">05</li>
+            <li class="form-select__option">06</li>
+          </ul>
+          <span class="form-select__text">ч.</span>
+        </div>
+        <div class="form-select form-select--small">
+          <button class="form-select__title">50</button>
+          <ul class="form-select-list">
+            <li class="form-select__option">30</li>
+            <li class="form-select__option">35</li>
+            <li class="form-select__option">40</li>
+            <li class="form-select__option">45</li>
+            <li class="form-select__option">50</li>
+            <li class="form-select__option">55</li>
+          </ul>
+          <span class="form-select__text">м.</span>
+        </div>
+      </div>
+      <div class="form-group form-group--half">
+        <p class="form__label">Тип экскурсии</p>
+        <div class="form-radio-list">
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour1">
+            <label for="tour1" class="form-radio__label">Пешеходная</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour2">
+            <label for="tour2" class="form-radio__label">Автобусная</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour3">
+            <label for="tour3" class="form-radio__label">Водная</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour4">
+            <label for="tour4" class="form-radio__label">Велосипедная</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour5">
+            <label for="tour5" class="form-radio__label">Самокат, сегвей</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour6">
+            <label for="tour6" class="form-radio__label">Мото</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour7">
+            <label for="tour7" class="form-radio__label">Аэро</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-type" class="form-radio__input" id="tour8">
+            <label for="tour8" class="form-radio__label">Паркур</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group form-group--half">
+        <p class="form__label">Возрастные ограничения</p>
+        <div class="form-radio-list">
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-year" class="form-radio__input" id="year1">
+            <label for="year1" class="form-radio__label">Нет</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-year" class="form-radio__input" id="year2">
+            <label for="year2" class="form-radio__label">+7</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="radio-tour-year" class="form-radio__input" id="year3">
+            <label for="year3" class="form-radio__label">+18</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="form__label">Теги</p>
+        <p class="form__text">Введите от 3 до 5 тегов к экскурсии, так вашу экскурсию увидят больше людей.</p>
+      </div>
+      <div class="form-buttons">
+        <button class="button button--second">Сохранить</button>
+        <button class="button button--primary">На проверку</button>
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <p class="footer__desc">©Excurse.me, 2020</p>
+    </div>
+    <div class="footer-center">
+      <h4 class="footer__title">О нас</h4>
+      <div class="footer-center-wrap">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Манифест</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Принципы</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Города и страны</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Благотворительность</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Команда</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Вакансии</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Партнеры</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Пресс-кит</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Эмблема</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link">Сувениры</a>
+          </li>
+          <li class="footer-item">
+            <a href="#0" class="footer__link footer__link--fill">Стать гидом. Стать лучше</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-right">
+      <h4 class="footer__title">Помощь</h4>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="#0" class="footer__link">Правила сервиса</a>
+        </li>
+        <li class="footer-item">
+          <a href="#0" class="footer__link">Пользовательское соглашение</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./scripts/pageGuide.js"></script>
+</body>
+
+</html>
